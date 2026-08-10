@@ -51,8 +51,18 @@ button {
   font-size: 16px;
 }
 
+.network {
+  background: #eeeeee;
+  color: #222;
+}
+
 button:active {
   transform: scale(0.98);
+}
+
+#networks {
+  display: none;
+  margin-top: 15px;
 }
 </style>
 </head>
@@ -69,7 +79,15 @@ button:active {
   <div class="card">
     <h2>📱 Buy Data</h2>
     <p>Purchase affordable mobile data bundles.</p>
-    <button>Buy Data</button>
+
+    <button onclick="showNetworks()">Buy Data</button>
+
+    <div id="networks">
+      <button class="network" onclick="selectNetwork('MTN')">MTN</button>
+      <button class="network" onclick="selectNetwork('Airtel')">Airtel</button>
+      <button class="network" onclick="selectNetwork('Glo')">Glo</button>
+      <button class="network" onclick="selectNetwork('9mobile')">9mobile</button>
+    </div>
   </div>
 
   <div class="card">
@@ -98,11 +116,15 @@ button:active {
 
 </div>
 
-</body><script>
-function buyData() {
-  alert(alert("MTN\nAirtel\nGlo\n9mobile");
-}<button>Buy Data</button>
+<script>
+function showNetworks() {
+  document.getElementById("networks").style.display = "block";
+}
+
+function selectNetwork(network) {
+  alert("You selected " + network);
+}
 </script>
+
+</body>
 </html>
-<button onclick="buyData()">Buy Data</button>
-<button onclick="buyData()">Buy Data</button>
