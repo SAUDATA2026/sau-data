@@ -1,19 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SAU DATA</title>
-</head>
-<body>
-  <h1>SAU DATA</h1>
-  <p>Simple mobile data and airtime platform</p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAU DATA</title>
 
-  <button>Buy Data</button>
-  <button>Buy Airtime</button>
-  <button>Check Balance</button>
-  <button>User Account</button>
-  <button>Transaction History</button>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+}
+
+header {
+  background: #075e54;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+header p {
+  margin: 8px 0 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #075e54;
+  color: white;
+  font-size: 16px;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>SAU DATA</h1>
+  <p>Simple Mobile Data & Airtime Platform</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>📱 Buy Data</h2>
+    <p>Purchase affordable mobile data bundles.</p>
+    <button>Buy Data</button>
+  </div>
+
+  <div class="card">
+    <h2>💳 Buy Airtime</h2>
+    <p>Recharge your mobile airtime easily.</p>
+    <button>Buy Airtime</button>
+  </div>
+
+  <div class="card">
+    <h2>💰 Check Balance</h2>
+    <p>Check your available balance.</p>
+    <button>Check Balance</button>
+  </div>
+
+  <div class="card">
+    <h2>👤 User Account</h2>
+    <p>Manage your SAU DATA account.</p>
+    <button>User Account</button>
+  </div>
+
+  <div class="card">
+    <h2>📜 Transaction History</h2>
+    <p>View your previous transactions.</p>
+    <button>Transaction History</button>
+  </div>
+
+</div>
+
 </body>
 </html>
